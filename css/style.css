@@ -678,7 +678,7 @@ body {
   position: absolute;
   top: 50%;
   z-index: 1;
-  font-size: 0;
+  font-size: 0px;
   width: 30px;
   height: 30px;
   cursor: pointer;
@@ -2041,7 +2041,7 @@ body {
 }
 
 .reviews-slider .slick-dots button {
-  font-size: 0;
+  font-size: 0px;
   width: 10px;
   height: 10px;
   background-color: #fff;
@@ -2114,7 +2114,7 @@ body {
 .reviews-item__date {
   color: rgba(255, 255, 255, 0.6);
   font-style: italic;
-  font-size: 13;
+  font-size: 15;
   opacity: 0;
   -webkit-transform: translate(0, 150%);
       -ms-transform: translate(0, 150%);
@@ -2444,9 +2444,9 @@ body {
   .about .experience__num {
     display: inline-block;
     padding: 0px 0px 0px 20px;
-    -webkit-box-align: left;
-        -ms-flex-align: left;
-            align-items: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 
   .about .experience__description {
