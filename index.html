@@ -19,7 +19,47 @@
 <body>
 
     <div class="wrapper">
-        @@include('_header.html')
+        <header id="header" class="header">
+    <div class="container">
+        <div class="header__inner">
+            <a class="header__logo" href="#">
+                <svg class="svg__logocar">
+                    <use xlink:href="#logoCar"></use>
+                </svg>
+                <span>Car Repair</span>
+            </a>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li><a class="header__link header__link--active" href="#intro">Home</a></li>
+                    <li><a class="header__link" href="#about">About</a></li>
+                    <li><a class="header__link" href="#services">Services</a></li>
+                    <li><a class="header__link" href="#team">Team</a></li>
+                    <li><a class="header__link" href="#contact">Contacts</a></li>
+                </ul>
+                <ul class="header__social">
+                    <li><a class="header__social-link" href="#">
+                            <svg class="svg__facebook">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a></li>
+                    <li><a class="header__social-link" href="#">
+                            <svg class="svg__twitter">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a></li>
+                    <li><a class="header__social-link" href="#">
+                            <svg class="svg__telegram">
+                                <use xlink:href="#telegram"></use>
+                            </svg>
+                        </a></li>
+                </ul>
+            </nav>
+            <div class="header__burger">
+                <span></span>
+            </div>
+        </div>
+    </div>
+</header><!-- /.header -->
         <main class="wrap">
 
             <svg style="display: none;">
@@ -185,7 +225,7 @@
             <section class="section intro section-intro" id="intro">
                 <div class="intro-slider">
                     <div class="intro-slider__item intro-item ibg">
-                        <img src="img/intro/1.jpg" alt="Car-1">
+                        <picture><source srcset="img/intro/1.webp" type="image/webp"><img src="img/intro/1.jpg" alt="Car-1"></picture>
                         <div class="container">
                             <div class="intro-item__content hidden__line">
                                 <h2 class="intro-item__suptitle hidden">Diagnostics, maintenance and repair of cars in a
@@ -197,7 +237,7 @@
                         </div>
                     </div>
                     <div class="intro-slider__item intro-item ibg">
-                        <img src="img/intro/2.jpg" alt="Car-2">
+                        <picture><source srcset="img/intro/2.webp" type="image/webp"><img src="img/intro/2.jpg" alt="Car-2"></picture>
                         <div class="container">
                             <div class="intro-item__content hidden__line">
                                 <h2 class="intro-item__suptitle hidden">Diagnostics, maintenance and repair of cars in a
@@ -209,7 +249,7 @@
                         </div>
                     </div>
                     <div class="intro-slider__item intro-item ibg">
-                        <img src="img/intro/3.jpg" alt="Car-3">
+                        <picture><source srcset="img/intro/3.webp" type="image/webp"><img src="img/intro/3.jpg" alt="Car-3"></picture>
                         <div class="container">
                             <div class="intro-item__content hidden__line">
                                 <h2 class="intro-item__suptitle hidden">Diagnostics, maintenance and repair of cars in a
@@ -221,7 +261,7 @@
                         </div>
                     </div>
                     <div class="intro-slider__item intro-item ibg">
-                        <img src="img/intro/4.jpg" alt="Car-4">
+                        <picture><source srcset="img/intro/4.webp" type="image/webp"><img src="img/intro/4.jpg" alt="Car-4"></picture>
                         <div class="container">
                             <div class="intro-item__content hidden__line">
                                 <h2 class="intro-item__suptitle hidden">Diagnostics, maintenance and repair of cars in a
@@ -275,7 +315,7 @@
                                 </div>
                                 <div class="about__right">
                                     <div class="about__right-image anim-items anim-no-hide">
-                                        <img src="img/about/engine.png" alt="engine">
+                                        <picture><source srcset="img/about/engine.webp" type="image/webp"><img src="img/about/engine.png" alt="engine"></picture>
                                     </div>
                                     <div class="about__right-experience experience anim-items anim-no-hide">
                                         <span class="experience__num">20</span>
@@ -314,7 +354,7 @@
 
                         <div class="about-tabs__inner">
                             <div class="about-tabs__left ibg anim-items anim-no-hide">
-                                <img src="img/about-tabs/1.jpg" alt="mechanic">
+                                <picture><source srcset="img/about-tabs/1.webp" type="image/webp"><img src="img/about-tabs/1.jpg" alt="mechanic"></picture>
                             </div>
                             <div class="about-tabs__right right-tabs">
                                 <div class="right-tabs__inner">
@@ -433,7 +473,7 @@
                                 </div>
                                 <div class="offers__right">
                                     <div class="offers__right-bg">
-                                        <img src="img/services/engine-services.png" alt="engine-services">
+                                        <picture><source srcset="img/services/engine-services.webp" type="image/webp"><img src="img/services/engine-services.png" alt="engine-services"></picture>
                                     </div>
                                     <ul class="offers__right-list anim-items anim-no-hide">
                                         <li>
@@ -563,7 +603,7 @@
                                     <div class="card-item__front front-card">
                                         <div class="front-card__wrappper-img">
                                             <div class="front-card__img ibg">
-                                                <img src="img/services/front-back/1.jpg" alt="Engine-card">
+                                                <picture><source srcset="img/services/front-back/1.webp" type="image/webp"><img src="img/services/front-back/1.jpg" alt="Engine-card"></picture>
                                             </div>
                                         </div>
                                         <div class="front-card__icon">
@@ -577,7 +617,7 @@
                                     <div class="card-item__back back-card">
                                         <div class="back-card__wrappper-img ibg">
                                             <div class="back-card__img">
-                                                <img src="img/services/front-back/1.jpg" alt="Engine-card">
+                                                <picture><source srcset="img/services/front-back/1.webp" type="image/webp"><img src="img/services/front-back/1.jpg" alt="Engine-card"></picture>
                                             </div>
                                         </div>
 
@@ -594,7 +634,7 @@
                                     <div class="card-item__front front-card">
                                         <div class="front-card__wrappper-img">
                                             <div class="front-card__img ibg">
-                                                <img src="img/services/front-back/2.jpg" alt="Transmision-card">
+                                                <picture><source srcset="img/services/front-back/2.webp" type="image/webp"><img src="img/services/front-back/2.jpg" alt="Transmision-card"></picture>
                                             </div>
                                         </div>
                                         <div class="front-card__icon">
@@ -608,7 +648,7 @@
                                     <div class="card-item__back back-card">
                                         <div class="back-card__wrappper-img ibg">
                                             <div class="back-card__img">
-                                                <img src="img/services/front-back/2.jpg" alt="Transmision-card">
+                                                <picture><source srcset="img/services/front-back/2.webp" type="image/webp"><img src="img/services/front-back/2.jpg" alt="Transmision-card"></picture>
                                             </div>
                                         </div>
 
@@ -625,7 +665,7 @@
                                     <div class="card-item__front front-card">
                                         <div class="front-card__wrappper-img ibg">
                                             <div class="front-card__img">
-                                                <img src="img/services/front-back/3.jpg" alt="Electric-card">
+                                                <picture><source srcset="img/services/front-back/3.webp" type="image/webp"><img src="img/services/front-back/3.jpg" alt="Electric-card"></picture>
                                             </div>
                                         </div>
                                         <div class="front-card__icon">
@@ -639,7 +679,7 @@
                                     <div class="card-item__back back-card">
                                         <div class="back-card__wrappper-img ibg">
                                             <div class="back-card__img">
-                                                <img src="img/services/front-back/3.jpg" alt="Electric-card">
+                                                <picture><source srcset="img/services/front-back/3.webp" type="image/webp"><img src="img/services/front-back/3.jpg" alt="Electric-card"></picture>
                                             </div>
                                         </div>
 
@@ -656,7 +696,7 @@
                                     <div class="card-item__front front-card">
                                         <div class="front-card__wrappper-img ibg">
                                             <div class="front-card__img">
-                                                <img src="img/services/front-back/4.jpg" alt="Other-card">
+                                                <picture><source srcset="img/services/front-back/4.webp" type="image/webp"><img src="img/services/front-back/4.jpg" alt="Other-card"></picture>
                                             </div>
                                         </div>
                                         <div class="front-card__icon">
@@ -670,7 +710,7 @@
                                     <div class="card-item__back back-card">
                                         <div class="back-card__wrappper-img ibg">
                                             <div class="back-card__img">
-                                                <img src="img/services/front-back/4.jpg" alt="Other-card">
+                                                <picture><source srcset="img/services/front-back/4.webp" type="image/webp"><img src="img/services/front-back/4.jpg" alt="Other-card"></picture>
                                             </div>
                                         </div>
                                         <h2 class="back-card__title">Other</h2>
@@ -770,25 +810,25 @@
                                 <a href="img/team/team-min/1.jpg" class="team-gellery__item anim-items anim-no-hide"
                                     data-fancybox="gallery">
                                     <div class="team-gellery__item-image ibg">
-                                        <img src="img/team/team-min/1.jpg" alt="Teammate-1">
+                                        <picture><source srcset="img/team/team-min/1.webp" type="image/webp"><img src="img/team/team-min/1.jpg" alt="Teammate-1"></picture>
                                     </div>
                                 </a>
                                 <a href="img/team/team-min/2.jpg" class="team-gellery__item anim-items anim-no-hide"
                                     data-fancybox="gallery">
                                     <div class="team-gellery__item-image ibg">
-                                        <img src="img/team/team-min/2.jpg" alt="Teammate-2">
+                                        <picture><source srcset="img/team/team-min/2.webp" type="image/webp"><img src="img/team/team-min/2.jpg" alt="Teammate-2"></picture>
                                     </div>
                                 </a>
                                 <a href="img/team/team-min/3.jpg" class="team-gellery__item anim-items anim-no-hide"
                                     data-fancybox="gallery">
                                     <div class="team-gellery__item-image ibg">
-                                        <img src="img/team/team-min/3.jpg" alt="Teammate-3">
+                                        <picture><source srcset="img/team/team-min/3.webp" type="image/webp"><img src="img/team/team-min/3.jpg" alt="Teammate-3"></picture>
                                     </div>
                                 </a>
                                 <a href="img/team/team-min/4.jpg" class="team-gellery__item anim-items anim-no-hide"
                                     data-fancybox="gallery">
                                     <div class="team-gellery__item-image ibg">
-                                        <img src="img/team/team-min/4.jpg" alt="Teammate-4">
+                                        <picture><source srcset="img/team/team-min/4.webp" type="image/webp"><img src="img/team/team-min/4.jpg" alt="Teammate-4"></picture>
                                     </div>
                                 </a>
                             </div>
@@ -937,7 +977,87 @@
 
 
         </main>
-        @@include('_footer.html')
+        <footer class="footer">
+    <div class="footer__map">
+        <iframe class="map-iframe"
+            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1921.6503923782643!2d36.231968986502274!3d49.990818745415154!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1594928510622!5m2!1sru!2sua"
+            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="container">
+        <div class="footer__inner">
+
+            <div class="footer-top">
+                <div class="footer__item">
+                    <div class="footer__item-icon anim-items anim-no-hide">
+                        <svg class="svg__phone">
+                            <use xlink:href="#phone"></use>
+                        </svg>
+                    </div>
+                    <a href="tel:+380733333333" class="footer__item-link">+380733333333</a>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item-icon anim-items anim-no-hide">
+                        <svg class="svg__map">
+                            <use xlink:href="#map"></use>
+                        </svg>
+                    </div>
+                    <p class="footer__item-info">
+                        1325 Baker Street North Side 1600 New York</p>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item-icon anim-items anim-no-hide">
+                        <svg class="svg__email">
+                            <use xlink:href="#email"></use>
+                        </svg>
+                    </div>
+                    <a href="mailto:example@email.el" class="footer__item-link">example@email.el</a>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item-icon anim-items anim-no-hide">
+                        <svg class="svg__time">
+                            <use xlink:href="#time"></use>
+                        </svg>
+                    </div>
+                    <div class="footer__item-info">Working time:<br><span>Monday-Friday <time>08:00 -
+                                17:00</time></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__social-wrapper">
+                <ul class="footer__social">
+                    <li class=" anim-items anim-no-hide"><a href="#" class="footer__social-link">
+                            <svg class="svg__facebook">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a></li>
+                    <li class=" anim-items anim-no-hide"><a href="#" class="footer__social-link">
+                            <svg class="svg__twitter">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a></li>
+                    <li class=" anim-items anim-no-hide"><a href="#" class="footer__social-link">
+                            <svg class="svg__instagram">
+                                <use xlink:href="#instagram"></use>
+                            </svg>
+                        </a></li>
+                    <li class=" anim-items anim-no-hide"><a href="#" class="footer__social-link">
+                            <svg class="svg__linkedin">
+                                <use xlink:href="#linkedin"></use>
+                            </svg>
+                        </a></li>
+                    <li class=" anim-items anim-no-hide"><a href="#" class="footer__social-link">
+                            <svg class="svg__vk">
+                                <use xlink:href="#vk"></use>
+                            </svg>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">Create by <span>ID-Dev</span> 2020</div>
+    </div>
+</footer>
+<!-- /.footer -->
 
     </div>
 
